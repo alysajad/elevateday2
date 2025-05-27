@@ -1,0 +1,23 @@
+1. What is phishing?  
+Phishing is a type of cyber attack where attackers try to trick people into giving away sensitive information like passwords, credit card numbers, or personal details. They usually do this by pretending to be a trustworthy source, like a bank or a well-known company, through fake emails, messages, or websites.
+
+2. How to identify a phishing email?  
+You can identify a phishing email by looking for signs like unexpected messages from unknown senders, urgent or threatening language, suspicious links or attachments, poor grammar and spelling mistakes, mismatched URLs when you hover over links, and email addresses that don’t match the official domain of the company they claim to be from.
+
+3. What is email spoofing?  
+Email spoofing is when an attacker sends an email that appears to come from a legitimate source but is actually fake. They manipulate the sender’s address to trick the recipient into trusting the email, often to steal information or spread malware.
+
+4. Why are phishing emails dangerous?  
+Phishing emails are dangerous because they can lead to identity theft, financial loss, and unauthorized access to personal or company accounts. Falling for phishing can also compromise sensitive data and sometimes infect your device with malware or ransomware.
+
+5. How can you verify the sender’s authenticity?  
+To verify if a sender is authentic, you can check the email address carefully, look at the email headers for details on where the email actually came from, confirm the sender through another communication channel if possible, and use security tools to check for spoofing or phishing indicators like SPF, DKIM, and DMARC records.
+
+6. What tools can analyze email headers?  
+There are several online tools to analyze email headers, such as MxToolbox Email Header Analyzer, Google’s Message Header Analyzer, and tools like Mailheader Analyzer by WhatIsMyIPAddress. These tools help reveal the path an email took and check for signs of spoofing or phishing.
+
+7. What actions should be taken on suspected phishing emails?  
+If you suspect an email is phishing, do not click on any links or download attachments. Report the email to your IT or security team, mark it as spam or phishing in your email client, delete the email, and if possible, warn others who might be targeted. Always stay cautious and verify suspicious emails before taking any action.
+
+8. How do attackers use social engineering in phishing?  
+Attackers use social engineering in phishing by exploiting human emotions like fear, curiosity, or urgency. They craft convincing messages that make victims act quickly without thinking, like claiming your account will be locked unless you verify it immediately. This manipulation makes people more likely to fall for the scam.

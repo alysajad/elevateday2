@@ -1,0 +1,69 @@
+Phishing Email Analysis Report
+
+As part of my internship, I analyzed a sample phishing email to understand common traits and techniques used in social engineering attacks. Below is the detailed analysis report I prepared based on my findings.
+
+1. Sample Phishing Email:
+I sourced a real phishing email example from Norton’s blog article on phishing examples:
+https://us.norton.com/blog/online-scams/phishing-email-examples
+
+Here is the content of the email I analyzed:
+
+From: Amazon Support <support@amaz0n.com>
+To: user@example.com
+Subject: Urgent: Your Amazon Account Has Been Locked
+
+Dear Customer,
+
+We have detected unusual activity in your Amazon account. To protect your information, we have temporarily locked your account.
+
+Please verify your account immediately by clicking the link below:
+
+https://amaz0n.com/verify
+
+Failure to verify within 24 hours will result in permanent suspension.
+
+Sincerely,
+Amazon Security Team
+
+2. Step-by-Step Analysis:
+
+Step 1: Sender’s Email Address
+I first examined the sender’s email: "support@amaz0n.com". At first glance, it looks legitimate, but on closer inspection, I noticed the domain uses a zero ('0') instead of the letter 'o'. This is a common technique to trick users into believing the email is from a trusted source.
+
+Step 2: Analyzing Email Headers
+To dig deeper, I used MxToolbox’s Email Header Analyzer (https://mxtoolbox.com/EmailHeaders.aspx). I pasted a full header sample into the tool. The results showed discrepancies:
+- The return-path did not match the "From" address.
+- The email originated from an IP that isn't associated with Amazon.
+- SPF, DKIM, and DMARC authentication checks failed.
+
+Step 3: Checking the Link
+The email contained a suspicious link: https://amaz0n.com/verify. I hovered over it and confirmed it matched the visible text, but the domain was obviously deceptive. I submitted the URL to GetLinkInfo (https://www.getlinkinfo.com) to verify where it led. It redirected to a known phishing site designed to capture Amazon credentials.
+
+Step 4: Urgent Language
+The body of the email used alarming phrases like “Urgent”, “immediately”, and threatened suspension of the account. This is a psychological trick used to provoke panic and quick action without thinking.
+
+Step 5: Generic Greeting
+Instead of using the recipient’s name, the email began with “Dear Customer”. Real companies usually personalize their communication, so this was another red flag.
+
+Step 6: Spelling and Grammar
+I also noted that the email had awkward wording and grammatical issues, which is uncommon for official communication from professional organizations like Amazon.
+
+3. Tools and Resources I Used:
+- Phishing Email Source: https://us.norton.com/blog/online-scams/phishing-email-examples
+- Email Header Analysis: https://mxtoolbox.com/EmailHeaders.aspx
+- Link Inspection: https://www.getlinkinfo.com
+
+4. Summary of Phishing Characteristics I Identified:
+- The sender’s email address was spoofed using a similar-looking domain.
+- Email headers revealed inconsistencies and failed authentication checks.
+- The link led to a malicious site that mimicked Amazon’s login page.
+- The message employed threatening language to prompt immediate response.
+- The greeting was generic and impersonal.
+- Several spelling and grammatical mistakes were present.
+
+5. Conclusion:
+Through this exercise, I was able to identify several indicators of phishing in the email I analyzed. The process reinforced my understanding of how attackers try to manipulate users and bypass basic scrutiny. It also highlighted the importance of examining both the visible and hidden elements of an email to detect malicious intent.
+
+Report compiled by:
+Sajad Hussain
+Cybersecurity Intern
